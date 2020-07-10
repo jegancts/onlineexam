@@ -10,6 +10,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { EventsComponent } from './events/events.component';
 import { SpecialEventsComponent } from './special-events/special-events.component';
+import { CompleteEventsComponent } from './complete-events/complete-events.component';
 import { AuthService } from './auth.service';
 import { EventService } from './event.service';
 import { TokenInterceptorService } from './token-interceptor.service';
@@ -22,7 +23,8 @@ import { TokenInterceptorService } from './token-interceptor.service';
     LoginComponent,
     RegisterComponent,
     EventsComponent,
-    SpecialEventsComponent
+    SpecialEventsComponent,
+    CompleteEventsComponent
   ],
   imports: [
     BrowserModule,
