@@ -76,37 +76,37 @@ router.get('/special', verifyToken, (req, res) => {
   let specialEvents = [
     {
       "_id": "1",
-      "name": "Alerts User1",
+      "name": "User1",
       "description": "List of anomalies",
       "date": "2020-07-08T18:25:43.511Z"
     },
     {
       "_id": "2",
-      "name": "Alerts User2",
+      "name": "User2",
       "description": "List of anomalies",
       "date": "2020-07-08T18:25:43.511Z"
     },
     {
       "_id": "3",
-      "name": "Alerts User3",
+      "name": "User3",
       "description": "List of anomalies",
       "date": "2020-07-08T18:25:43.511Z"
     },
     {
       "_id": "4",
-      "name": "Alerts User4",
+      "name": " User4",
       "description": "List of anomalies",
       "date": "2020-07-08T18:25:43.511Z"
     },
     {
       "_id": "5",
-      "name": "Alerts User5",
+      "name": "User5",
       "description": "List of anomalies",
       "date": "2020-07-08T18:25:43.511Z"
     },
     {
       "_id": "6",
-      "name": "Alerts User6",
+      "name": "User6",
       "description": "List of anomalies",
       "date": "2020-07-08T18:25:43.511Z"
     }

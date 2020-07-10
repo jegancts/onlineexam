@@ -18,7 +18,7 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
-  loginUser () {
+/*   loginUser () {
     this._auth.loginUser(this.loginUserData)
     .subscribe(
       res => {
@@ -27,6 +27,11 @@ export class LoginComponent implements OnInit {
       },
       err => console.log(err)
     ) 
-  }
+  } */
+
+  loginUser () { 
+  
+    this._router.navigate(['/events']); 
+    } 
 
 }

@@ -1,14 +1,44 @@
-<div class="row mt-5">
-    <div class="col-md-4 mb-3" *ngFor="let event of specialEvents">
-      <div class="card text-center">
-        <div class="card-body">
-          <h5 class="card-title">{{event.name}}</h5>
-          <p class="card-text">{{event.description}}</p>
-          <a href="#" class="btn btn-success">Monitor Alert</a>
-        </div>
-        <div class="card-footer text-muted">
-          {{event.date | date:'shortDate'}}
-        </div>
-      </div>
-    </div>
-  </div>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, td, th {  
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+table {
+  margin-top: 100 px;
+  border-collapse: collapse;
+  width: 100%;
+      }
+
+th, td {
+  padding: 15px;
+}
+</style>
+</head>
+<body>
+      <style> p {text-align: center;}</style>
+ <p> </p>
+ <p style="font-family:verdana">DashBoard - Test Takers Anomalies List </p>
+     <table>
+        <tr>
+            <th>Test Taker Name</th>
+            <th>Anomaly Detected</th>
+            <th>Test Date</th>
+            <th>Anomaly Snippet</th>
+        </tr>
+        <tr class="col-md-12 mb-1" *ngFor="let event of sample">
+  
+            <td>{{event.name}}</td>
+            <td> {{event.flag}}</td>
+            <td>{{event.timeStamp}} </td> 
+         
+             <td><a href={{event.url}}>view anomaly</a></td>  
+           
+           <!-- <td>{{event.url}}</td> -->
+       </tr>
+    </table>
+</body>
+</html>

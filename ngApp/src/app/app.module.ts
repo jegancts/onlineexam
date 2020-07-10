@@ -15,6 +15,7 @@ import { EventService } from './event.service';
 import { TokenInterceptorService } from './token-interceptor.service';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +28,7 @@ import { TokenInterceptorService } from './token-interceptor.service';
     BrowserModule,
     FormsModule,
     HttpClientModule,
+  
     AppRoutingModule
   ],
   providers: [AuthService, AuthGuard, EventService, 

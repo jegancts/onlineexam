@@ -9,7 +9,7 @@ import { AuthGuard } from './auth.guard';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/login',
+    redirectTo: '/register',
     pathMatch: 'full'
   },
   {
@@ -19,7 +19,7 @@ const routes: Routes = [
   {
     path: 'special',
     canActivate: [AuthGuard],
-    component: SpecialEventsComponent
+    component: SpecialEventsComponent 
   },
   {
     path: 'login',
